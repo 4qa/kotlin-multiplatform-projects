@@ -1,14 +1,16 @@
 pluginManagement {
-    val kotlinVersion = "1.5.255-SNAPSHOT"
+//    val kotlinVersion = "1.5.255-SNAPSHOT"
+    val kotlinVersion = "1.5.30-dev-2892"
     repositories {
         gradlePluginPortal()
         mavenCentral()
         google()
         mavenLocal()
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/dev")
     }
     plugins {
         kotlin("multiplatform") version kotlinVersion
-        kotlin("android") version kotlinVersion
+//        kotlin("android") version kotlinVersion
     }
     resolutionStrategy {
         eachPlugin {
