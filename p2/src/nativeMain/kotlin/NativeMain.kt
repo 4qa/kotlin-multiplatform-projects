@@ -1,7 +1,5 @@
 import kotlinx.cinterop.toKString
 import curl.*
-import sqlite.Fts5PhraseIter
-import sqlite.sqlite3_initialize
 
 @OptIn(ExperimentalUnsignedTypes::class)
 fun useCurl() {
@@ -15,9 +13,4 @@ fun useCurl() {
         }
         curl_easy_cleanup(curl)
     }
-}
-
-fun useSqlite(): Fts5PhraseIter {
-    sqlite3_initialize()
-    TODO()
 }
