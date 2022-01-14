@@ -21,3 +21,7 @@ fun useSqlite(): Fts5PhraseIter {
     sqlite3_initialize()
     TODO()
 }
+
+fun main(){
+    useCurl()
+}

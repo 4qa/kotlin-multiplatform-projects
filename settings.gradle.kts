@@ -1,7 +1,6 @@
 pluginManagement {
 //    val kotlinVersion = "1.5.255-SNAPSHOT"
-//    val kotlinVersion = "1.6.0-M1-482"
-    val kotlinVersion = "1.6.20-dev-2170"
+    val kotlinVersion = "1.6.20-M1-116"
     repositories {
         gradlePluginPortal()
         mavenCentral()
