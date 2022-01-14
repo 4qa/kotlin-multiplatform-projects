@@ -6,7 +6,7 @@ kotlin {
     val macosA = macosX64("macosA")
     val macosB = macosX64("macosB")
 
-//    val linux = linuxX64("linux")
+    val linux = linuxX64("linux")
 
     val commonMain by sourceSets.getting
     val commonTest by sourceSets.getting
@@ -24,8 +24,8 @@ kotlin {
     val macosATest by sourceSets.getting
     val macosBTest by sourceSets.getting
 
-//    val linuxMain by sourceSets.getting
-//    val linuxTest by sourceSets.getting
+    val linuxMain by sourceSets.getting
+    val linuxTest by sourceSets.getting
 
 
     macosAMain.dependsOn(nativeMain)
@@ -35,8 +35,8 @@ kotlin {
     macosBTest.dependsOn(nativeTest)
 
 
-//    linuxMain.dependsOn(nativeMain)
-//    linuxTest.dependsOn(nativeTest)
+    linuxMain.dependsOn(nativeMain)
+    linuxTest.dependsOn(nativeTest)
 
     macosA.compilations.getByName("main").cinterops.create("curl")
     macosB.compilations.getByName("main").cinterops.create("curl")
@@ -44,8 +44,8 @@ kotlin {
     macosA.compilations.getByName("main").cinterops.create("sqlite")
     macosB.compilations.getByName("main").cinterops.create("sqlite")
 
-//    linux.compilations.getByName("main").cinterops.create("curl")
-//    linux.compilations.getByName("main").cinterops.create("sqlite")
+    linux.compilations.getByName("main").cinterops.create("curl")
+    linux.compilations.getByName("main").cinterops.create("sqlite")
 
 
 
